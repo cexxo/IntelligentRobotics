@@ -1,0 +1,5 @@
+The dependencies of the message/service 'my_package/srv1' have changed. Please rerun cmake.
+make[2]: *** [CMakeFiles/_my_package_generate_messages_check_deps_srv1.dir/build.make:57: CMakeFiles/_my_package_generate_messages_check_deps_srv1] Error 1
+make[1]: *** [CMakeFiles/Makefile2:890: CMakeFiles/_my_package_generate_messages_check_deps_srv1.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

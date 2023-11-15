@@ -1,0 +1,7 @@
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/robotControl.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/robotControl.cpp:68:33:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kros::ServiceServer ros::NodeHandle::advertiseService(ros::AdvertiseServiceOptions&)[m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+   68 |  ros::ServiceServer service = [01;31m[Kn.advertiseService[m[K = n.advertiseService("Giving info", info);
+      |                               [01;31m[K~~^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/robotControl.dir/build.make:63: CMakeFiles/robotControl.dir/src/robotControl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/robotControl.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

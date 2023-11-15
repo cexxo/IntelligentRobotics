@@ -1,0 +1,35 @@
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:26:10:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K/[m[K’ token
+   26 |  std_msgs[01;31m[K/[m[KHeader pippo;
+      |          [01;31m[K^[m[K
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:26:11:[m[K [01;31m[Kerror: [m[K‘[01m[KHeader[m[K’ was not declared in this scope
+   26 |  std_msgs/[01;31m[KHeader[m[K pippo;
+      |           [01;31m[K^~~~~~[m[K
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:26:11:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/forwards.h:55:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kros::Header[m[K’
+   55 | class [01;36m[KHeader[m[K;
+      |       [01;36m[K^~~~~~[m[K
+In file included from [01m[K/home/cexxo39/excercise1_ws/devel/.private/my_package/include/my_package/srv1Request.h:18[m[K,
+                 from [01m[K/home/cexxo39/excercise1_ws/devel/.private/my_package/include/my_package/srv1.h:11[m[K,
+                 from [01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:3[m[K:
+[01m[K/opt/ros/noetic/include/std_msgs/Header.h:58:52:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::Header[m[K’
+   58 | typedef ::std_msgs::Header_<std::allocator<void> > [01;36m[KHeader[m[K;
+      |                                                    [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/ros/serialization.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/publisher.h:34[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:1[m[K:
+[01m[K/opt/ros/noetic/include/ros/message_traits.h:168:8:[m[K [01;36m[Knote: [m[K  ‘[01m[Kros::message_traits::Header[m[K’
+  168 | struct [01;36m[KHeader[m[K
+      |        [01;36m[K^~~~~~[m[K
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:29:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kpippo[m[K’ was not declared in this scope
+   29 |  srv.request.msg = [01;31m[Kpippo[m[K;
+      |                    [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/listener.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

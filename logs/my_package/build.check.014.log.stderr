@@ -1,0 +1,13 @@
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/build/my_package/cmake/my_package-genmsg.cmake:3 (message):
+  Could not find messages which
+  '/home/cexxo39/excercise1_ws/src/my_package/srv/srv1.srv' depends on.  Did
+  you forget to specify generate_messages(DEPENDENCIES ...)?
+
+  Cannot locate message [msg] in package [my_package] with paths
+  [['/home/cexxo39/excercise1_ws/src/my_package/msg']]
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:71 (generate_messages)
+
+
+make: *** [Makefile:786: cmake_check_build_system] Error 1

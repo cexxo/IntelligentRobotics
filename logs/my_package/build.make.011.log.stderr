@@ -1,0 +1,35 @@
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:26:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass ros::NodeHandle[m[K’ has no member named ‘[01m[KserviceCLient[m[K’; did you mean ‘[01m[KserviceClient[m[K’?
+   26 |  ros::ServiceClient client = n.[01;31m[KserviceCLient[m[K<my_package::srv1>("request robot_info");
+      |                                [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                [32m[KserviceClient[m[K
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:26:62:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   26 |  ros::ServiceClient client = n.serviceCLient<my_package::srv1[01;31m[K>[m[K("request robot_info");
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:28:26:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kmy_package::srv1Request_<std::allocator<void> >::_msg_type[m[K’ {aka ‘[01m[Kstd_msgs::Header_<std::allocator<void> >[m[K’} and ‘[01m[Kchar*[m[K’)
+   28 |  srv.request.msg = argv[1[01;31m[K][m[K;
+      |                          [01;31m[K^[m[K
+In file included from [01m[K/home/cexxo39/excercise1_ws/devel/.private/my_package/include/my_package/srv1Request.h:18[m[K,
+                 from [01m[K/home/cexxo39/excercise1_ws/devel/.private/my_package/include/my_package/srv1.h:11[m[K,
+                 from [01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:3[m[K:
+[01m[K/opt/ros/noetic/include/std_msgs/Header.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::Header_<std::allocator<void> >& std_msgs::Header_<std::allocator<void> >::operator=(const std_msgs::Header_<std::allocator<void> >&)[m[K’
+   22 | struct [01;36m[KHeader_[m[K
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/std_msgs/Header.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kchar*[m[K’ to ‘[01m[Kconst std_msgs::Header_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/noetic/include/std_msgs/Header.h:22:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::Header_<std::allocator<void> >& std_msgs::Header_<std::allocator<void> >::operator=(std_msgs::Header_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/noetic/include/std_msgs/Header.h:22:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kchar*[m[K’ to ‘[01m[Kstd_msgs::Header_<std::allocator<void> >&&[m[K’
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:29:25:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kchar*[m[K’ to ‘[01m[Kmy_package::srv1Request_<std::allocator<void> >::_ID_type[m[K’ {aka ‘[01m[Kint[m[K’} [[01;31m[K-fpermissive[m[K]
+   29 |  srv.request.ID = [01;31m[Kargv[2][m[K;
+      |                   [01;31m[K~~~~~~^[m[K
+      |                         [01;31m[K|[m[K
+      |                         [01;31m[Kchar*[m[K
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/robotControl.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/robotControl.cpp:65:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo[m[K’ was not declared in this scope
+   65 |  ros::ServiceServer service = n.advertiseService = n.advertiseService("Giving info", [01;31m[Kinfo[m[K);
+      |                                                                                      [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/robotControl.dir/build.make:63: CMakeFiles/robotControl.dir/src/robotControl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:199: CMakeFiles/robotControl.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
