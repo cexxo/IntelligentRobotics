@@ -23,7 +23,9 @@ int main(int argc, char **argv)
 	ros::Subscriber sub = n.subscribe("message",1000,messageCallback);
 	ros::ServiceClient client = n.serviceClient<my_package::srv1>("request_robot_info");
 	my_package::srv1 srv;
-	srv.request.ID = atoll(argv[1]);
+	int name =0;
+	n.getParam("/listener/stationName", name);
+	srv.request.ID = name;
 	if (client.call(srv)){
 		ROS_INFO("id is: %d", srv.response.robotMessage.ID);
 		ROS_INFO("Name is: %s", srv.response.robotMessage.Name.c_str());

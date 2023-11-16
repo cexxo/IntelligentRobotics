@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+<node name ="robotControl" pkg="my_package" type="robotControl"/>
+<node name ="listener" pkg="my_package" type="listener">
+	<param name = "stationName" value="1"/>
+</node>
+</launch>

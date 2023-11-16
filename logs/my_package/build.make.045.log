@@ -1,0 +1,16 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _my_package_generate_messages_check_deps_RVL
+[  0%] Built target _my_package_generate_messages_check_deps_srv2
+[  0%] Built target _my_package_generate_messages_check_deps_srv1
+[ 27%] Built target my_package_generate_messages_nodejs
+[ 27%] Built target my_package_generate_messages_lisp
+[ 40%] Built target my_package_generate_messages_cpp
+[ 81%] Built target my_package_generate_messages_py
+[ 77%] Built target my_package_generate_messages_eus
+[ 81%] Built target my_package_generate_messages
+[ 90%] Built target listener
+[100%] Built target robotControl

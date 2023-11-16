@@ -73,6 +73,7 @@ int main(int argc, char **argv){
 	//Excercise 2 Lab 4
 	ros::init(argc, argv, "Robot_doing_things");
 	ros::NodeHandle n;
+	ros::Rate loop_rate(5);
 	my_package::RVL robotMsg;
 	ros::ServiceServer service = n.advertiseService("request_robot_info", info);
 	ROS_INFO("Ready to give informations");
