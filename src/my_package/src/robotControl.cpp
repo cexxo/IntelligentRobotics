@@ -18,6 +18,7 @@ bool info(my_package::srv1::Request & req, my_package::srv1::Response &res){
 	msg2.Name = "Pippo";
 	msg2.Level = 19;
 	res.robotMessage = msg2;
+	ROS_INFO("The following chargin station %d requested the info", req.ID);
 	ROS_INFO("Request header %d, %d, %s", req.msg.seq, req.msg.stamp, req.msg.frame_id.c_str());
 	ROS_INFO("I'm here, kind of");
 	return true;
