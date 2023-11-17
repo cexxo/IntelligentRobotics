@@ -1,0 +1,7 @@
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:26:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K/[m[K’ token
+   26 |  ros::Rate loop_rate(srv.request.ID+1)[01;31m[K/[m[K10);
+      |                                       [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

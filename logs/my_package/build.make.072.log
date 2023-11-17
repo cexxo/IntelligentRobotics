@@ -1,0 +1,24 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _my_package_generate_messages_check_deps_srv2
+[  0%] Built target _my_package_generate_messages_check_deps_RVL
+[  0%] Built target _my_package_generate_messages_check_deps_srv1
+[ 13%] Built target my_package_generate_messages_lisp
+[ 36%] Built target my_package_generate_messages_py
+[ 50%] Built target my_package_generate_messages_nodejs
+[ 68%] Built target my_package_generate_messages_eus
+[ 81%] Built target my_package_generate_messages_cpp
+[35m[1mScanning dependencies of target listener[0m
+[ 81%] Built target my_package_generate_messages
+[ 90%] Built target robotControl
+[ 95%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:26:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K/[m[K’ token
+   26 |  ros::Rate loop_rate(srv.request.ID+1)[01;31m[K/[m[K10);
+      |                                       [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

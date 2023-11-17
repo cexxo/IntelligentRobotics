@@ -23,8 +23,11 @@ int main(int argc, char **argv)
 	ros::Subscriber sub = n.subscribe("message",1000,messageCallback);
 	my_package::srv1 srv;
 	srv.request.ID = atoll(argv[1]);
-	ros::ServiceClient client = n.serviceClient<my_package::srv1>("request_robot_info");
+	double rate = srv.request.ID + 2;
+	rate = rate/20;
+	ros::Rate loop_rate(rate);
 	while(ros::ok()){
+		ros::ServiceClient client = n.serviceClient<my_package::srv1>("request_robot_info");
 		if (client.call(srv)){
 			ROS_INFO("id is: %d", srv.response.robotMessage.ID);
 			ROS_INFO("Name is: %s", srv.response.robotMessage.Name.c_str());
@@ -34,6 +37,7 @@ int main(int argc, char **argv)
 			ROS_ERROR("Something went wrong, try to launch the robot first");
 		}
 		ros::spinOnce();
+		loop_rate.sleep();
 	}
 	return 0;
 }
