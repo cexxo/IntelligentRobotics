@@ -1,0 +1,19 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _my_package_generate_messages_check_deps_srv2
+[  0%] Built target _my_package_generate_messages_check_deps_srv1
+[  0%] Built target _my_package_generate_messages_check_deps_RVL
+[ 27%] Built target my_package_generate_messages_nodejs
+[ 36%] Built target my_package_generate_messages_py
+[ 68%] Built target my_package_generate_messages_cpp
+[ 68%] Built target my_package_generate_messages_eus
+[ 81%] Built target my_package_generate_messages_lisp
+[35m[1mScanning dependencies of target robotControl[0m
+[ 81%] Built target my_package_generate_messages
+[ 86%] [32mBuilding CXX object CMakeFiles/robotControl.dir/src/robotControl.cpp.o[0m
+[ 95%] Built target listener
+[100%] [32m[1mLinking CXX executable /home/cexxo39/excercise1_ws/devel/.private/my_package/lib/my_package/robotControl[0m
+[100%] Built target robotControl

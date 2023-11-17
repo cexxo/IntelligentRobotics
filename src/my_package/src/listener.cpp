@@ -24,9 +24,10 @@ int main(int argc, char **argv)
 	my_package::srv1 srv;
 	srv.request.ID = atoll(argv[1]);
 	double rate = srv.request.ID + 2;
-	rate = rate/20;
+	rate = rate/50;
 	ros::Rate loop_rate(rate);
 	while(ros::ok()){
+		loop_rate.sleep();
 		ros::ServiceClient client = n.serviceClient<my_package::srv1>("request_robot_info");
 		if (client.call(srv)){
 			ROS_INFO("id is: %d", srv.response.robotMessage.ID);
@@ -37,7 +38,7 @@ int main(int argc, char **argv)
 			ROS_ERROR("Something went wrong, try to launch the robot first");
 		}
 		ros::spinOnce();
-		loop_rate.sleep();
+		//loop_rate.sleep();
 	}
 	return 0;
 }
