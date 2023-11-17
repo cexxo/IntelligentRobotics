@@ -16,8 +16,7 @@ bool info(my_package::srv1::Request & req, my_package::srv1::Response &res){
 	std::string names[] = {"RVL","IAS","CEC","BOD","ADT"};
 	my_package::RVL msg2;
 	msg2.ID = req.ID;
-	//msg2.Name = names[rand()%5];
-	msg2.Name = "Vacuum Slut";
+	msg2.Name = names[rand()%5];
 	msg2.Level = rand()%100+1;
 	res.robotMessage = msg2;
 	ROS_INFO("The following charging station %d requested the info", req.ID);
