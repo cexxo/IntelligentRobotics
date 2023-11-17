@@ -1,19 +1,19 @@
-[  0%] Built target std_msgs_generate_messages_py
 [  0%] Built target std_msgs_generate_messages_eus
 [  0%] Built target std_msgs_generate_messages_cpp
-[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
 [  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
 [  0%] Built target _my_package_generate_messages_check_deps_srv1
-[  0%] Built target _my_package_generate_messages_check_deps_RVL
 [  0%] Built target _my_package_generate_messages_check_deps_srv2
-[ 31%] Built target my_package_generate_messages_lisp
-[ 31%] Built target my_package_generate_messages_eus
+[  0%] Built target _my_package_generate_messages_check_deps_RVL
+[ 18%] Built target my_package_generate_messages_eus
+[ 31%] Built target my_package_generate_messages_nodejs
 [ 45%] Built target my_package_generate_messages_cpp
-[ 59%] Built target my_package_generate_messages_nodejs
+[ 59%] Built target my_package_generate_messages_lisp
 [ 81%] Built target my_package_generate_messages_py
 [35m[1mScanning dependencies of target listener[0m
-[ 81%] Built target my_package_generate_messages
 [ 86%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[ 86%] Built target my_package_generate_messages
 [ 95%] Built target robotControl
 [100%] [32m[1mLinking CXX executable /home/cexxo39/excercise1_ws/devel/.private/my_package/lib/my_package/listener[0m
 [100%] Built target listener

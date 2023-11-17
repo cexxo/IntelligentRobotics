@@ -1,7 +1,27 @@
 <?xml version="1.0"?>
 <launch>
-<node name ="robotControl" pkg="my_package" type="robotControl"/>
-<node name ="listener" pkg="my_package" type="listener">
-	<param name = "stationName" value="1"/>
+<arg name ="arg0" default="0"/>
+<arg name ="arg1" default="1"/>
+<arg name ="arg2" default="2"/>
+<arg name="arg3" default="3"/>
+<arg name="arg4" default="4"/>
+<node name ="robotControl" pkg="my_package" type="robotControl" output="screen"/>
+<node name ="listener" pkg="my_package" type="listener" output="screen">
+	<param name="stationName" value="1"/>
+</node>
+<node name = "listener0" pkg="my_package" type="listener" output="screen" args="$(arg arg0)">
+	<param name="stationName" value="0"/>
+</node>
+<node name ="listener1" pkg="my_package" type="listener" output="screen" args="$(arg arg1)">
+	<param name="stationName" value="1"/>
+</node>
+<node name="listener2" pkg="my_package" type="listener" output="screen" args="$(arg arg2)">
+	<param name="stationName" value="2"/>
+</node>
+<node name="listener3" pkg="my_package" type="listener" output="screen" args="$(arg arg3)">
+	<param name="stationName" value="3"/>
+</node>
+<node name="listener4" pkg="my_package" type="listener" output="screen" args="$(arg arg4)">
+	<param name="stationName" value="4"/>
 </node>
 </launch>
