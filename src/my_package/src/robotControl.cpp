@@ -44,6 +44,18 @@ class my_actionAction{
 		bool success = true;
 		feedback_.currentCharge = 0;
 		feedback_.currentCharge += 5;
+		if(as_.isPreemptRequested() || !ros::ok()){
+			ROS_INFO("%s: Preempted",action_name_.c_str());
+			as_.setPreempted();
+			success = false;
+		}
+		as_.publishFeedback(feedback_);
+		r.sleep();
+		if(success){
+			result_.goal_reached = true;
+			ROS_INFO("%s, succedeed",action_name_.c_str());
+			as_.setSucceeded(result_);
+		}
 	}
 	~my_actionAction(void){}
 };
@@ -104,6 +116,7 @@ int main(int argc, char **argv){
 	ros::spin();*/
 	//Excercise 3 Lab 5
 	ros::init(argc, argv, "Robot_doing_things");
+	my_actionAction my_action("my_action");
 	//Gonna create the class for the action
 	ros::spin();
 	return 0;

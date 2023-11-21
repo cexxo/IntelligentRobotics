@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/cexxo39/excercise1_ws/build/my_package
 include CMakeFiles/_my_package_generate_messages_check_deps_srv1.dir/progress.make
 
 CMakeFiles/_my_package_generate_messages_check_deps_srv1:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py my_package /home/cexxo39/excercise1_ws/src/my_package/srv/srv1.srv my_package/RVL:std_msgs/Header
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py my_package /home/cexxo39/excercise1_ws/src/my_package/srv/srv1.srv std_msgs/Header:my_package/RVL
 
 _my_package_generate_messages_check_deps_srv1: CMakeFiles/_my_package_generate_messages_check_deps_srv1
 _my_package_generate_messages_check_deps_srv1: CMakeFiles/_my_package_generate_messages_check_deps_srv1.dir/build.make

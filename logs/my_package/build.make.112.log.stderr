@@ -1,0 +1,8 @@
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/robotControl.cpp:[m[K In member function ‘[01m[Kvoid my_actionAction::executeCB(const my_actionGoalConstPtr&)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/robotControl.cpp:55:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kmy_package::my_actionResult[m[K’ {aka ‘[01m[Kstruct my_package::my_actionResult_<std::allocator<void> >[m[K’} has no member named ‘[01m[KgoalReached[m[K’; did you mean ‘[01m[Kgoal_reached[m[K’?
+   55 |    result_.[01;31m[KgoalReached[m[K = true;
+      |            [01;31m[K^~~~~~~~~~~[m[K
+      |            [32m[Kgoal_reached[m[K
+make[2]: *** [CMakeFiles/robotControl.dir/build.make:63: CMakeFiles/robotControl.dir/src/robotControl.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1891: CMakeFiles/robotControl.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
