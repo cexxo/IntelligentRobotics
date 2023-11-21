@@ -11,6 +11,8 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   message_generation
+  actionlib
+  actionlib_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -61,16 +63,20 @@ find_package(catkin REQUIRED COMPONENTS
  )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
+ add_action_files(
+	DIRECTORY
+	action
+   FILES
+   myAction.action
+	my_action.action
 #   Action2.action
-# )
+ )
 
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
    std_msgs
+   actionlib_msgs
  )
 
 ################################################
@@ -105,7 +111,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES point1
-   CATKIN_DEPENDS roscpp std_msgs message_runtime
+   CATKIN_DEPENDS roscpp std_msgs message_runtime actionlib
 #  DEPENDS system_lib
 )
 
@@ -206,9 +212,9 @@ include_directories(
 # catkin_add_nosetests(test)
 
 add_executable(robotControl src/robotControl.cpp)
-add_dependencies(robotControl my_package_generate_messages_cpp)
+add_dependencies(robotControl my_package_generate_messages_cpp ${my_package_EXPORTED_TARGETS})
 target_link_libraries(robotControl ${catkin_LIBRARIES})
 add_executable(listener src/listener.cpp)
-add_dependencies(listener my_package_generate_messages_cpp)
+add_dependencies(listener my_package_generate_messages_cpp ${my_package_EXPORTED_TARGETS})
 target_link_libraries(listener ${catkin_LIBRARIES})
 

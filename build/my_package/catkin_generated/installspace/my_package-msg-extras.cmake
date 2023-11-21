@@ -1,2 +1,2 @@
-set(my_package_MESSAGE_FILES "msg/RVL.msg")
+set(my_package_MESSAGE_FILES "msg/RVL.msg;msg/myActionAction.msg;msg/myActionActionGoal.msg;msg/myActionActionResult.msg;msg/myActionActionFeedback.msg;msg/myActionGoal.msg;msg/myActionResult.msg;msg/myActionFeedback.msg;msg/my_actionAction.msg;msg/my_actionActionGoal.msg;msg/my_actionActionResult.msg;msg/my_actionActionFeedback.msg;msg/my_actionGoal.msg;msg/my_actionResult.msg;msg/my_actionFeedback.msg")
 set(my_package_SERVICE_FILES "srv/srv1.srv;srv/srv2.srv")

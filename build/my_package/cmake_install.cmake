@@ -140,6 +140,37 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_package/action" TYPE FILE FILES
+    "/home/cexxo39/excercise1_ws/src/my_package/action/myAction.action"
+    "/home/cexxo39/excercise1_ws/src/my_package/action/my_action.action"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_package/msg" TYPE FILE FILES
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/myActionAction.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/myActionActionGoal.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/myActionActionResult.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/myActionActionFeedback.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/myActionGoal.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/myActionResult.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/myActionFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_package/msg" TYPE FILE FILES
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/my_actionAction.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/my_actionActionGoal.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/my_actionActionResult.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/my_actionActionFeedback.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/my_actionGoal.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/my_actionResult.msg"
+    "/home/cexxo39/excercise1_ws/devel/.private/my_package/share/my_package/msg/my_actionFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_package/cmake" TYPE FILE FILES "/home/cexxo39/excercise1_ws/build/my_package/catkin_generated/installspace/my_package-msg-paths.cmake")
 endif()
 

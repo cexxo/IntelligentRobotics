@@ -1,0 +1,188 @@
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libactionlib.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libcpp_common.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/librosconsole.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target
+  "/opt/ros/noetic/lib/librosconsole_backend_interface.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/librosconsole_log4cxx.so" of
+  target "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libroscpp.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libroscpp_serialization.so" of
+  target "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/librostime.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libxmlrpcpp.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0"
+  of target "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target
+  "/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target
+  "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0"
+  of target "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0"
+  of target "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0"
+  of target "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4"
+  of target "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/liblog4cxx.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:217 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libpthread.so" of target
+  "listener" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libactionlib.so" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libcpp_common.so" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/librosconsole.so" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target
+  "/opt/ros/noetic/lib/librosconsole_backend_interface.so" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/librosconsole_log4cxx.so" of
+  target "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libroscpp.so" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libroscpp_serialization.so" of
+  target "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/librostime.so" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/opt/ros/noetic/lib/libxmlrpcpp.so" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0"
+  of target "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target
+  "/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target
+  "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0"
+  of target "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0"
+  of target "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0"
+  of target "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4"
+  of target "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/liblog4cxx.so" of target
+  "robotControl" does not exist.
+
+
+[31m[1mCMake Error[0m at /home/cexxo39/excercise1_ws/src/my_package/CMakeLists.txt:214 (add_dependencies):
+  The dependency target "/usr/lib/x86_64-linux-gnu/libpthread.so" of target
+  "robotControl" does not exist.
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
+make: *** [Makefile:1150: cmake_check_build_system] Error 1

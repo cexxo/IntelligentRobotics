@@ -1,6 +1,8 @@
 #include "ros/ros.h"
 #include "my_package/RVL.h"
 #include "my_package/srv1.h"
+#include "actionlib/server/simple_action_server.h"
+#include "my_package/my_actionAction.h"
 #include <sstream>
 #include<string>
 #include<iostream>
@@ -23,6 +25,29 @@ bool info(my_package::srv1::Request & req, my_package::srv1::Response &res){
 	//ROS_INFO("Request header %d, %s", req.msg.seq, req.msg.frame_id.c_str());
 	return true;
 }
+
+class my_actionAction{
+	protected:
+		ros::NodeHandle nh_;
+		actionlib::SimpleActionServer<my_package::my_actionAction> as_;
+		std::string action_name_;
+		my_package::my_actionFeedback feedback_;
+		my_package::my_actionResult result_;
+
+	public:
+		my_actionAction(std::string name) : as_(nh_,name,boost::bind(&my_actionAction::executeCB,this,_1),false),action_name_(name){
+		as_.start();
+	}
+
+	void executeCB(const my_package::my_actionGoalConstPtr &goal){
+		ros::Rate r(1);//1 message per second, i guess
+		bool success = true;
+		feedback_.currentCharge = 0;
+		feedback_.currentCharge += 5;
+	}
+	~my_actionAction(void){}
+};
+
 int main(int argc, char **argv){
 	//Excersice 1 Lab 3
 	/*int ids[] = {1,2,3,4,5};
@@ -71,11 +96,15 @@ int main(int argc, char **argv){
 	  }
 	  }*/
 	//Excercise 2 Lab 4
-	ros::init(argc, argv, "Robot_doing_things");
+	/*ros::init(argc, argv, "Robot_doing_things");
 	ros::NodeHandle n;
 	my_package::RVL robotMsg;
 	ros::ServiceServer service = n.advertiseService("request_robot_info", info);
 	ROS_INFO("Ready to give informations");
+	ros::spin();*/
+	//Excercise 3 Lab 5
+	ros::init(argc, argv, "Robot_doing_things");
+	//Gonna create the class for the action
 	ros::spin();
 	return 0;
 }

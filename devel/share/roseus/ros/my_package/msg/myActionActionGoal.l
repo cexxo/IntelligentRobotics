@@ -1,0 +1,1 @@
+/home/cexxo39/excercise1_ws/devel/.private/my_package/share/roseus/ros/my_package/msg/myActionActionGoal.l
