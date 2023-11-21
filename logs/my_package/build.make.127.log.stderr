@@ -1,0 +1,25 @@
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:53:15:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[Kactionlib::SimpleClientGoalState[m[K’ and ‘[01m[Kconst char [10][m[K’)
+   53 |  while([32m[Kstate2[m[K [01;31m[K!=[m[K [34m[K"SUCCEEDED"[m[K){
+      |        [32m[K~~~~~~[m[K [01;31m[K^~[m[K [34m[K~~~~~~~~~~~[m[K
+      |        [32m[K|[m[K         [34m[K|[m[K
+      |        [32m[K|[m[K         [34m[Kconst char [10][m[K
+      |        [32m[Kactionlib::SimpleClientGoalState[m[K
+In file included from [01m[K/opt/ros/noetic/include/actionlib/client/simple_action_client.h:49[m[K,
+                 from [01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:4[m[K:
+[01m[K/opt/ros/noetic/include/actionlib/client/simple_client_goal_state.h:78:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool actionlib::SimpleClientGoalState::operator!=(const actionlib::SimpleClientGoalState::StateEnum&) const[m[K’
+   78 |   inline bool [01;36m[Koperator[m[K!=(const SimpleClientGoalState::StateEnum & rhs) const
+      |               [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/actionlib/client/simple_client_goal_state.h:78:67:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [10][m[K’ to ‘[01m[Kconst actionlib::SimpleClientGoalState::StateEnum&[m[K’
+   78 |   inline bool operator!=([01;36m[Kconst SimpleClientGoalState::StateEnum & rhs[m[K) const
+      |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/opt/ros/noetic/include/actionlib/client/simple_client_goal_state.h:83:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool actionlib::SimpleClientGoalState::operator!=(const actionlib::SimpleClientGoalState&) const[m[K’
+   83 |   inline bool [01;36m[Koperator[m[K!=(const SimpleClientGoalState & rhs) const
+      |               [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/actionlib/client/simple_client_goal_state.h:83:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [10][m[K’ to ‘[01m[Kconst actionlib::SimpleClientGoalState&[m[K’
+   83 |   inline bool operator!=([01;36m[Kconst SimpleClientGoalState & rhs[m[K) const
+      |                          [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:200: CMakeFiles/listener.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

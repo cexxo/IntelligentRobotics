@@ -1,0 +1,17 @@
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass actionlib::SimpleActionClient<my_package::my_actionAction_<std::allocator<void> > >[m[K’ has no member named ‘[01m[KgetFeedback[m[K’; did you mean ‘[01m[Ktypedef my_package::my_actionActionFeedback_<std::allocator<void> >::_feedback_type actionlib::SimpleActionClient<my_package::my_actionAction_<std::allocator<void> > >::Feedback[m[K’? (not accessible from this context)
+   52 |  ac.[01;31m[KgetFeedback[m[K(feedback);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/noetic/include/actionlib/client/client_helpers.h:45[m[K,
+                 from [01m[K/opt/ros/noetic/include/actionlib/client/action_client.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/actionlib/client/simple_action_client.h:47[m[K,
+                 from [01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:4[m[K:
+[01m[K/opt/ros/noetic/include/actionlib/action_definition.h:48:51:[m[K [01;36m[Knote: [m[Kdeclared private here
+   48 |   typedef typename ActionFeedback::_feedback_type [01;36m[KFeedback[m[K; \
+      |                                                   [01;36m[K^~~~~~~~[m[K
+[01m[K/opt/ros/noetic/include/actionlib/action_definition.h:48:51:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KACTION_DEFINITION[m[K’
+   48 |   typedef typename ActionFeedback::_feedback_type [01;36m[KFeedback[m[K; \
+      |                                                   [01;36m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:200: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

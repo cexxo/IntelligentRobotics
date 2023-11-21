@@ -1,0 +1,46 @@
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target _my_package_generate_messages_check_deps_myActionActionResult
+[  0%] Built target _my_package_generate_messages_check_deps_myActionAction
+[  0%] Built target _my_package_generate_messages_check_deps_srv1
+[  0%] Built target _my_package_generate_messages_check_deps_srv2
+[  0%] Built target _my_package_generate_messages_check_deps_my_actionGoal
+[  0%] Built target _my_package_generate_messages_check_deps_my_actionFeedback
+[  0%] Built target _my_package_generate_messages_check_deps_myActionActionGoal
+[  0%] Built target _my_package_generate_messages_check_deps_myActionActionFeedback
+[  0%] Built target _my_package_generate_messages_check_deps_myActionFeedback
+[  0%] Built target _my_package_generate_messages_check_deps_myActionGoal
+[  0%] Built target _my_package_generate_messages_check_deps_RVL
+[  0%] Built target _my_package_generate_messages_check_deps_myActionResult
+[  0%] Built target _my_package_generate_messages_check_deps_my_actionActionResult
+[  0%] Built target _my_package_generate_messages_check_deps_my_actionAction
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target _my_package_generate_messages_check_deps_my_actionActionGoal
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _my_package_generate_messages_check_deps_my_actionActionFeedback
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _my_package_generate_messages_check_deps_my_actionResult
+[ 43%] Built target my_package_generate_messages_cpp
+[ 83%] Built target my_package_generate_messages_nodejs
+[ 83%] Built target my_package_generate_messages_eus
+[ 89%] Built target my_package_generate_messages_lisp
+[ 95%] Built target my_package_generate_messages_py
+[35m[1mScanning dependencies of target listener[0m
+[ 95%] Built target my_package_generate_messages
+[ 97%] Built target robotControl
+[ 98%] [32mBuilding CXX object CMakeFiles/listener.dir/src/listener.cpp.o[0m
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:56:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kac[m[K’ is not a class, namespace, or enumeration
+   56 |  ac.sendGoal(goal,[01;31m[Kac[m[K::SimpleDoneCallback(),ac::SimpleActiveCallback(),boost::bind(&feedbackCallback,_1));
+      |                   [01;31m[K^~[m[K
+[01m[K/home/cexxo39/excercise1_ws/src/my_package/src/listener.cpp:56:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kac[m[K’ is not a class, namespace, or enumeration
+   56 |  ac.sendGoal(goal,ac::SimpleDoneCallback(),[01;31m[Kac[m[K::SimpleActiveCallback(),boost::bind(&feedbackCallback,_1));
+      |                                            [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/listener.dir/build.make:63: CMakeFiles/listener.dir/src/listener.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:200: CMakeFiles/listener.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
