@@ -43,7 +43,7 @@ class my_actionAction{
 		ros::Rate r(1);//1 message per second, i guess
 		bool success = true;
 		feedback_.currentCharge = 0;
-		for(int i=0;feedback_.currentCharge<goal->maximumCharge;i++){
+		for(int i=0;feedback_.currentCharge<=goal->maximumCharge;i++){
 			if(as_.isPreemptRequested() || !ros::ok()){
 				ROS_INFO("%s: Preempted",action_name_.c_str());
 				as_.setPreempted();

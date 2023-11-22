@@ -57,7 +57,6 @@ int main(int argc, char **argv)
 	my_package::my_actionFeedback feedback;
 	goal.maximumCharge = 80;
 	ac.sendGoal(goal,actionClient::SimpleDoneCallback(),actionClient::SimpleActiveCallback(),boost::bind(&feedbackCallback,_1));
-	actionlib::SimpleClientGoalState state2 = ac.getState();
 	bool finished_before_timeout = ac.waitForResult(ros::Duration(30.0));
 	if(finished_before_timeout){
 		actionlib::SimpleClientGoalState state = ac.getState();
